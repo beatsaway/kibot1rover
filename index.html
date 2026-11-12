@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kibot1 AR — Parts Assembly Guide (English)</title>
+  <style>
+:root {
+  --ink: #1a1a1a;
+  --muted: #555;
+  --line: #c8c8c8;
+  --warn: #c00;
+  --bg: #f7f7f5;
+  --card: #fff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+h1 {
+  font-size: 1.85rem;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 2rem;
+  font-size: 1.05rem;
+}
+h2 {
+  font-size: 1.35rem;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--ink);
+}
+h3 {
+  font-size: 1.1rem;
+  margin: 1.75rem 0 0.75rem;
+}
+.note {
+  background: #fff5f5;
+  border-left: 4px solid var(--warn);
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+}
+.note strong { color: var(--warn); }
+.warn { color: var(--warn); font-weight: 600; }
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+@media (max-width: 700px) {
+  .steps { grid-template-columns: 1fr; }
+}
+.step {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 0.9rem 1rem 1rem;
+}
+.step.full { grid-column: 1 / -1; }
+.step p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+.step img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.35rem auto 0;
+}
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.img-row img { max-width: 48%; }
+.missing {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1.25rem 0.5rem;
+  background: #f0f0ee;
+}
+ol.plain {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+}
+ol.plain li { margin: 0.35rem 0; }
+.wiring {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1rem 1.15rem;
+  margin: 1rem 0;
+}
+.wiring ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Parts Assembly</h1>
+    <p class="subtitle">Structure Assembly — Kibot1 AR (English translation; figures extracted from the Chinese PDF)</p>
+    <h2>Tracked Vehicle Chassis</h2>
+    <h3>1. Install the idler wheels (install 10 drive/idler wheels)</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. M4×40 screw, idler wheel, M4 nut.</p>
+        <img src="images/pdf_001.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Pass the screw through the center and assemble.</p>
+        <img src="images/pdf_002.png" alt="">
+      </div>
+    </div>
+    <h3>2. Install the left-side wheels</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Take out the side plate.</p>
+        <img src="images/pdf_003.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Mount the assembled drive/idler wheels onto the side plate.</p>
+        <img src="images/pdf_004.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Secure with M4 <span class='warn'>lock nuts</span>. <strong>(Note: Make sure the idler wheels can spin freely and that they are aligned in a straight line.)</strong></p>
+        <img src="images/pdf_005.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Mount the gear motor onto the left side plate.</p>
+        <img src="images/pdf_006.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Fix the motor with M3×8 screws.</p>
+        <img src="images/pdf_007.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Install the track; seat the idler wheels into the track guides.</p>
+        <img src="images/pdf_008.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Install the drive wheel.</p>
+        <img src="images/pdf_009.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Use an M3×6 screw; tighten against the flat side of the motor output shaft.</p>
+        <img src="images/pdf_010.png" alt="">
+      </div>
+    </div>
+    <h3>3. Install the right-side wheels</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Take out the side plate.</p>
+        <img src="images/pdf_011.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Mount the assembled drive/idler wheels onto the side plate.</p>
+        <img src="images/pdf_012.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Secure with M4 <span class='warn'>lock nuts</span>. <strong>(Note: Make sure the idler wheels can spin freely and that they are aligned in a straight line.)</strong></p>
+        <img src="images/pdf_013.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Mount the gear motor onto the side plate.</p>
+        <img src="images/pdf_014.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Fix the motor with M3×8 screws.</p>
+        <img src="images/pdf_016.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Install the track; seat the idler wheels into the track guides.</p>
+        <img src="images/pdf_015.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Install the drive wheel.</p>
+        <img src="images/pdf_017.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Use an M3×6 screw; tighten against the flat side of the motor output shaft.</p>
+        <img src="images/pdf_018.png" alt="">
+      </div>
+    </div>
+    <h3>4. Assemble the tracked vehicle chassis as a whole</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Prepare the assembled left and right wheel assemblies.</p>
+        <img src="images/pdf_019.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Install the top plate.</p>
+        <img src="images/pdf_020.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Secure with M3×6 <span class='warn'>self-tapping</span> screws. <strong>(Secure both sides.)</strong></p>
+        <img src="images/pdf_021.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Install the bottom plate.</p>
+        <img src="images/pdf_022.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Secure with M3×6 <span class='warn'>self-tapping</span> screws. (Secure both sides.)</p>
+        <img src="images/pdf_023.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Chassis assembly complete.</p>
+        <img src="images/pdf_024.png" alt="">
+      </div>
+    </div>
+    <h2>Part 3 — Robotic Arm Assembly</h2>
+    <h3>Servos must be centered (reset)</h3>
+
+<div class="note">
+  <strong>Note:</strong> Before installing a servo, it must be <span class="warn">centered (homed)</span>.
+  Servos leave the factory already centered by default. During assembly, avoid rotating the servo shaft.
+  If it is accidentally rotated, power it on to re-center, then install again.
+</div>
+<p><strong>How to center a servo:</strong> Power on to reset/center.</p>
+<p><strong>Items needed:</strong> Control board, lithium battery, and the servo to be centered.</p>
+<p><strong>Steps:</strong> (see also the servo centering video)</p>
+<ol class="plain">
+  <li>Plug the servo into any one servo port on the control board.</li>
+  <li>Supply power to the control board from the lithium battery.</li>
+  <li>Turn on the control board switch — centering is complete.</li>
+</ol>
+
+    <div class="steps">
+      <div class="step">
+        <p>Servo interface / control board reference</p>
+        <img src="images/pdf_025.png" alt="">
+      </div>
+    </div>
+
+<div class="wiring">
+  <p><strong>Servo port wiring</strong></p>
+  <ul>
+    <li>Servo wire <strong>red</strong> = positive (+) — connect to the middle “+” on the control board</li>
+    <li>Servo wire <strong>brown</strong> = negative (−) — connect to the outer “−” on the control board</li>
+    <li>Servo wire <strong>yellow</strong> = signal (S) — connect to the inner “S” on the control board</li>
+    <li>Battery: red to positive, black to negative</li>
+  </ul>
+</div>
+
+    <h3>Claw must be half open</h3>
+
+<div class="note">
+  <strong>Note:</strong> Before installing the claw servo, keep the <span class="warn">claw half open</span>,
+  then <span class="warn">insert the already-centered servo</span>. This ensures that when powered on,
+  the claw is in the half-open position.
+</div>
+
+    <div class="steps">
+      <div class="step">
+        <p>Claw half-open — front view</p>
+        <img src="images/pdf_026.png" alt="">
+      </div>
+      <div class="step">
+        <p>Claw half-open — with servo</p>
+        <img src="images/pdf_027.png" alt="">
+      </div>
+    </div>
+    <h3>1. Assemble the small disc</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Take out the small disc.</p>
+        <img src="images/pdf_028.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Install the metal servo horn; attach the horn to the small disc.</p>
+        <img src="images/pdf_029.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Use 4× M3×6 screws; tighten from the other side.</p>
+        <img src="images/pdf_030.png" alt="">
+      </div>
+      <div class="step">
+        <p><strong>Note:</strong> The metal servo horn has internal threads — tighten with screws only; no nuts are needed.</p>
+        <p class="missing">No figure in the original PDF for this step</p>
+      </div>
+    </div>
+    <h3>2. Assemble the servo bracket and small disc</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. As shown, mount the servo bracket onto the small disc.</p>
+        <img src="images/pdf_031.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Install M4×10 screws and tighten with M4 nuts.</p>
+        <img src="images/pdf_032.png" alt="">
+      </div>
+    </div>
+    <h3>3. Mount both small discs on the large bearing</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Mount the small disc with the servo horn onto the large bearing. <strong>The servo horn must face outward.</strong></p>
+        <img src="images/pdf_033.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Mount the small disc with the servo bracket onto the large bearing, on the opposite side from the other small disc.</p>
+        <img src="images/pdf_034.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Tighten with M4×18 screws.</p>
+        <img src="images/pdf_035.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Secure with M4 nuts.</p>
+        <img src="images/pdf_036.png" alt="">
+      </div>
+    </div>
+    <h3>4. Install the rings</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Install the first ring.</p>
+        <img src="images/pdf_037.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Pass M4×35 screws through.</p>
+        <img src="images/pdf_038.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install the other ring.</p>
+        <img src="images/pdf_039.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Secure with M4×13 copper posts/standoffs.</p>
+        <img src="images/pdf_040.png" alt="">
+      </div>
+    </div>
+    <h3>5. Assemble the large disc</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Take out the large disc.</p>
+        <img src="images/pdf_041.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Insert a TBS2701 servo into the disc. Insert from one side of the servo shaft; keep the shaft centered in the disc.</p>
+        <img src="images/pdf_042.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Fix the servo with M4×10 screws.</p>
+        <img src="images/pdf_043.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Secure with M4 nuts.</p>
+        <img src="images/pdf_044.png" alt="">
+      </div>
+    </div>
+    <h3>6. Assemble the rotating base as a whole</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Seat the large disc (with servo) onto the small disc (with servo horn). <strong>(Mind the servo position and the servo bracket position.)</strong></p>
+        <img src="images/pdf_045.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Install the M4×35 copper posts/standoffs.</p>
+        <img src="images/pdf_046.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install the cup bearing; attach the <span class='warn'>large end</span> to the servo bracket.</p>
+        <img src="images/pdf_047.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Fix with M3×8 screws.</p>
+        <img src="images/pdf_048.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Install the M3 nut.</p>
+        <img src="images/pdf_050.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Install a TBS2701 servo; keep the servo shaft and cup bearing in a straight line.</p>
+        <img src="images/pdf_049.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Install M4×10 screws.</p>
+        <img src="images/pdf_051.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Install M4 nuts.</p>
+        <img src="images/pdf_052.png" alt="">
+      </div>
+      <div class="step">
+        <p>9. Install the servo horn (cross-shaped / “+” horn).</p>
+        <img src="images/pdf_053.png" alt="">
+      </div>
+    </div>
+    <h3>7. Assemble the long U-brackets</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Assemble the two long U-brackets.</p>
+        <img src="images/pdf_054.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Install 4× M3×8 screws.</p>
+        <img src="images/pdf_055.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install 4× M3 nuts.</p>
+        <img src="images/pdf_056.png" alt="">
+      </div>
+    </div>
+    <h3>8. Assemble L-bracket + servo + long U-bracket</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Join the L-bracket and long U-bracket; attach the L-bracket’s <span class='warn'>short edge</span> to the long U.</p>
+        <p class="missing">No figure in the original PDF for this step</p>
+      </div>
+      <div class="step">
+        <p>2. Secure with M3×6 screws and M3 nuts.</p>
+        <p class="missing">No figure in the original PDF for this step</p>
+      </div>
+      <div class="step">
+        <p>3. Place the servo bracket. Attach the L-bracket’s <span class='warn'>long edge</span> to the servo bracket.</p>
+        <img src="images/pdf_057.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Install M3×8 screws and M3 nuts; tighten from the inside outward.</p>
+        <img src="images/pdf_058.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Install the cup bearing. Attach the large end of the bearing to the servo bracket.</p>
+        <img src="images/pdf_059.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Fix the cup bearing with M3×8 screws.</p>
+        <img src="images/pdf_060.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Secure with M3 nuts.</p>
+        <img src="images/pdf_061.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Install a TBS2701 servo. (Servo shaft and cup bearing on the same straight line.)</p>
+        <img src="images/pdf_062.png" alt="">
+      </div>
+      <div class="step">
+        <p>9. Secure with M4×10 screws.</p>
+        <img src="images/pdf_063.png" alt="">
+      </div>
+      <div class="step">
+        <p>10. Secure with M4 nuts.</p>
+        <img src="images/pdf_064.png" alt="">
+      </div>
+      <div class="step">
+        <p>11. Secure the servo horn. (Preferably use a cross-shaped / “+” horn.)</p>
+        <div class="img-row">
+          <img src="images/pdf_065.png" alt="">
+          <img src="images/pdf_066.png" alt="">
+        </div>
+      </div>
+      <div class="step full">
+        <p>Completed L-bracket + servo sub-assembly</p>
+        <img src="images/pdf_067.png" alt="">
+      </div>
+    </div>
+    <h3>9. Assemble the servo brackets</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Join the two servo brackets together.</p>
+        <img src="images/pdf_068.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Secure with M3×6 screws and M3 nuts.</p>
+        <img src="images/pdf_069.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install the cup bearing; attach the large end to the servo bracket.</p>
+        <img src="images/pdf_070.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Fix the bearing with M3×8 screws and M3 nuts.</p>
+        <img src="images/pdf_071.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Place a TBS2701 servo. Keep the servo shaft and cup bearing on the same straight line.</p>
+        <img src="images/pdf_072.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Fix the servo with M4×10 screws and M4 nuts.</p>
+        <img src="images/pdf_073.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Place another TBS2701 servo. Mind the relative positions of the two servos.</p>
+        <img src="images/pdf_074.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Fix the servo with M4×10 screws and M4 nuts.</p>
+        <img src="images/pdf_075.png" alt="">
+      </div>
+      <div class="step">
+        <p>9. Install the servo horn for the upper servo.</p>
+        <img src="images/pdf_076.png" alt="">
+      </div>
+      <div class="step">
+        <p>10. Install the servo horn for the lower servo.</p>
+        <img src="images/pdf_077.png" alt="">
+      </div>
+    </div>
+    <h3>10. Assemble the robotic arm as a whole</h3>
+    <div class="steps">
+      <div class="step">
+        <p>1. Mount the long U-bracket assembly onto the rotating base.</p>
+        <img src="images/pdf_078.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. Secure with M3×6 screws.</p>
+        <img src="images/pdf_079.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install the L-shaped bracket assembly.</p>
+        <img src="images/pdf_080.png" alt="">
+      </div>
+      <div class="step">
+        <p>4. Secure with M3×6 screws.</p>
+        <img src="images/pdf_081.png" alt="">
+      </div>
+      <div class="step">
+        <p>5. Install the servo bracket assembly.</p>
+        <img src="images/pdf_082.png" alt="">
+      </div>
+      <div class="step">
+        <p>6. Secure with M3×6 screws.</p>
+        <img src="images/pdf_083.png" alt="">
+      </div>
+      <div class="step">
+        <p>7. Secure with M3×6 screws. (Ensure the servo horn will not rotate; if it rotates, re-center again.)</p>
+        <img src="images/pdf_084.png" alt="">
+      </div>
+      <div class="step">
+        <p>8. Fix the alloy robotic claw onto the servo horn. <span class='warn'>Mind the claw and servo positions.</span></p>
+        <img src="images/pdf_026.png" alt="">
+      </div>
+      <div class="step">
+        <p>9. Fix the claw with M3×6 screws.</p>
+        <img src="images/pdf_085.png" alt="">
+      </div>
+      <div class="step">
+        <p>10. Keep the claw half open while inserting the servo.</p>
+        <img src="images/pdf_086.png" alt="">
+      </div>
+      <div class="step">
+        <p>11. Insert the TBSN-K15 claw-dedicated metal gear servo; insert it while the servo is centered.</p>
+        <img src="images/pdf_087.png" alt="">
+      </div>
+      <div class="step">
+        <p>12. Secure with M3×6 screws.</p>
+        <img src="images/pdf_027.png" alt="">
+      </div>
+      <div class="step">
+        <p>13. Secure the servo horn with M3×6 screws.</p>
+        <img src="images/pdf_089.png" alt="">
+      </div>
+      <div class="step">
+        <p>14. Robotic arm assembly complete.</p>
+        <img src="images/pdf_088.png" alt="">
+      </div>
+    </div>
+    <h2>Part 4 — Mount the Robotic Arm on the Tracked Chassis</h2>
+    <div class="steps">
+      <div class="step full">
+        <p>1. Mount the robotic arm onto the tracked vehicle chassis. <span class='warn'>The bottom-most servo wire should face rearward.</span></p>
+        <img src="images/pdf_090.png" alt="">
+      </div>
+      <div class="step">
+        <p>2. As shown, the claw servo should also face rearward.</p>
+        <img src="images/pdf_091.png" alt="">
+      </div>
+      <div class="step">
+        <p>3. Install M4×10 screws through the reserved holes in the base.</p>
+        <img src="images/pdf_092.png" alt="">
+      </div>
+      <div class="step full">
+        <p>4. Mind the mounting position.</p>
+        <img src="images/pdf_093.png" alt="">
+      </div>
+      <div class="step full">
+        <p>5. Overall assembly complete.</p>
+        <div class="img-row">
+          <img src="images/pdf_094.png" alt="">
+          <img src="images/pdf_095.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
